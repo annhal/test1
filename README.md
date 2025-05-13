@@ -46,6 +46,7 @@
 - When doing so, the main gets copied to main. You can then work in the new branch without touching main.
 - You will see an option to merge and check pull requests, where you can explain what you did with words:
 '# Title / words / code block with ```` and at the bottom too.'
+- Use Create a merge commit (don't necessarily rebase), if you use squash, all your updates will be squashed to one file and added - useful for long changes.
 
 
   
