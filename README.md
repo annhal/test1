@@ -29,3 +29,7 @@
 - AND COMMIT THEM
 - AND THEN MAKE AVAILABLE LOCALLY by cloning: repo > code > copy ssh key
 - check your directory in the terminal, I've made a mistake and placed test2 in test1
+
+## Connect with R
+- You can connect R with Git but it's a figuring out process (which we don't do in class).
+- Maybe I need to reinstall R for this? 
