@@ -33,3 +33,8 @@
 ## Connect with R
 - You can connect R with Git but it's a figuring out process (which we don't do in class).
 - Maybe I need to reinstall R for this? 
+
+## Some notes
+- Use git status in abundance.
+- Are there temp files you don't want to track, add to gitignore
+  
