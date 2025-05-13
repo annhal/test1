@@ -50,7 +50,8 @@
 - Merging won't remove the branch.
 
 ## In terminal
-- You need to also pull your merge in the shell to add it locally
+
+### You need to also pull your merge in the shell to add it locally: 
 
 _Just for clarity:_
 5537304@UU105242 MINGW64 ~/test2_repo_create (main)
@@ -84,6 +85,75 @@ $ git branch -a
   remotes/origin/HEAD -> origin/main
   remotes/origin/cakes
   remotes/origin/main
+
+### Creating branches in terminal
+We create a branch in the terminal, on our local computer. We make 'morecake' branch, from 'main' (all locally).
+Note that you: 
+(a) we create the branch morecake locally
+(b) in it, we create morecakefile.txt
+(c) we then want to commit our file to 'main' on git (we ignore the branch we created; we know it works and want to merge directly into 'main')
+(d) before we push, we need to switch to 'main' as that's where we want to push our morecakefile.txt to
+(e) in github, there won't be a new branch just a new file
+
+5537304@UU105242 MINGW64 ~/test2_repo_create (main)
+$ git branch morecake main
+
+5537304@UU105242 MINGW64 ~/test2_repo_create (main)
+$ git branch -a
+  cakes
+* main
+  morecake
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/cakes
+  remotes/origin/main
+
+5537304@UU105242 MINGW64 ~/test2_repo_create (main)
+$ git switch morecake
+Switched to branch 'morecake'
+
+5537304@UU105242 MINGW64 ~/test2_repo_create (morecake)
+$ git add morecakefile.txt
+
+5537304@UU105242 MINGW64 ~/test2_repo_create (morecake)
+$ git commit -m "added a morecakefile to morecake branch"
+[morecake aa4123d] added a morecakefile to morecake branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 morecakefile.txt
+
+5537304@UU105242 MINGW64 ~/test2_repo_create (morecake)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+5537304@UU105242 MINGW64 ~/test2_repo_create (main)
+$ git merge morecake
+Updating 7ee8e3e..aa4123d
+Fast-forward
+ morecakefile.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 morecakefile.txt
+
+5537304@UU105242 MINGW64 ~/test2_repo_create (main)
+$ git branch -a
+  cakes
+* main
+  morecake
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/cakes
+  remotes/origin/main
+
+5537304@UU105242 MINGW64 ~/test2_repo_create (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:annhal/test2_repo_create.git
+   7ee8e3e..aa4123d  main -> main
+
 
 
   
