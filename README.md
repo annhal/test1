@@ -1,5 +1,7 @@
 # test1
 
+# Version control 
+
 ## First push and pull tests
 - A line added via laptop
 - A line added via git
@@ -37,4 +39,9 @@
 ## Some notes
 - Use git status in abundance.
 - Are there temp files you don't want to track, add to gitignore
+
+# Version control - advanced materials
+- Branches are very useful, but you can only merge if you are certain it will work. Otherwise, your whole code breaks.
+- We try it out by forking the recipe book and adding branches.
+
   
