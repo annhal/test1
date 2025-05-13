@@ -44,5 +44,8 @@
 - Branches are very useful, but you can only merge if you are certain it will work. Otherwise, your whole code breaks.
 - We try it out by forking the recipe book and adding branches.
 - When doing so, the main gets copied to main. You can then work in the new branch without touching main.
+- You will see an option to merge and check pull requests, where you can explain what you did with words:
+'# Title / words / code block with ```` and at the bottom too.'
+
 
   
