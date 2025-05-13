@@ -47,6 +47,7 @@
 - You will see an option to merge and check pull requests, where you can explain what you did with words:
 '# Title / words / code block with ```` and at the bottom too.'
 - Use Create a merge commit (don't necessarily rebase), if you use squash, all your updates will be squashed to one file and added - useful for long changes.
+- Merging won't remove the branch.
 
 
   
