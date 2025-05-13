@@ -43,5 +43,6 @@
 # Version control - advanced materials
 - Branches are very useful, but you can only merge if you are certain it will work. Otherwise, your whole code breaks.
 - We try it out by forking the recipe book and adding branches.
+- When doing so, the main gets copied to main. You can then work in the new branch without touching main.
 
   
