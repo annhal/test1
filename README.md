@@ -49,5 +49,41 @@
 - Use Create a merge commit (don't necessarily rebase), if you use squash, all your updates will be squashed to one file and added - useful for long changes.
 - Merging won't remove the branch.
 
+## In terminal
+- You need to also pull your merge in the shell to add it locally
+
+_Just for clarity:_
+5537304@UU105242 MINGW64 ~/test2_repo_create (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 1.81 KiB | 88.00 KiB/s, done.
+From github.com:annhal/test2_repo_create
+   d17b9d8..a7bbd57  main       -> origin/main
+ * [new branch]      cakes      -> origin/cakes
+Updating d17b9d8..a7bbd57
+Fast-forward
+ cake recipe | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ create mode 100644 cake recipe
+
+5537304@UU105242 MINGW64 ~/test2_repo_create (main)
+$ ls
+ CITATION.cff   R/         'cake recipe'   docs/      simple-r-project.Rproj
+ LICENSE        README.md   data/          results/
+
+5537304@UU105242 MINGW64 ~/test2_repo_create (main)
+$ git branch
+* main
+
+5537304@UU105242 MINGW64 ~/test2_repo_create (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/cakes
+  remotes/origin/main
+
 
   
